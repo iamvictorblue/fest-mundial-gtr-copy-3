@@ -33,6 +33,7 @@ const Navbar = () => {
     { href: "#simposio", label: "Simposio Internacional" },
     { href: "#concurso-nacional", label: "Concurso Nacional" },
     { href: "#conciertos", label: "Conciertos" },
+    { href: "#calendario", label: "Calendario De Eventos" },
     { href: "#festival-2024", label: "Festival Mundial 2024" },
   ];
 
@@ -145,7 +146,7 @@ const Navbar = () => {
               className={`block px-3 py-2 rounded-md text-base font-[500] ${
                 isCompetitionPage 
                   ? 'text-white hover:bg-white hover:text-[rgb(95,188,215)]' 
-                  : 'text-[#FFD700] hover:bg-[#FFD700] hover:text-black'
+                  : 'text-white hover:bg-white hover:text-[#FF7F50]'
               } transition-all duration-200`}
               whileHover={{ x: 10 }}
             >
