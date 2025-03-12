@@ -7,8 +7,7 @@ import competitionLogo from "../assets/competition-logo.png";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const location = useLocation();
-  const isFestivalPage = location.pathname.includes('festival');
-  const isCompetitionPage = !isFestivalPage; // Default to competition page
+  const isCompetitionPage = location.pathname.includes('competition');
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
