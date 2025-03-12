@@ -7,7 +7,8 @@ import competitionLogo from "../assets/competition-logo.png";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const location = useLocation();
-  const isCompetitionPage = location.pathname.includes('competition');
+  const isFestivalPage = location.pathname.includes('festival');
+  const isCompetitionPage = !isFestivalPage; // Default to competition page
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -30,11 +31,11 @@ const Navbar = () => {
 
   const festivalNavItems = [
     { href: "#festival-2025", label: "Festival Mundial 2025" },
+    { href: "#calendario", label: "Descripción y Calendario De Eventos" },
     { href: "#simposio", label: "Simposio Internacional" },
-    { href: "#concurso-nacional", label: "Concurso Nacional" },
     { href: "#conciertos", label: "Conciertos" },
-    { href: "#calendario", label: "Calendario De Eventos" },
-    { href: "#festival-2024", label: "Festival Mundial 2024" },
+    { href: "#concurso-nacional", label: "Concurso Nacional de Guitarra" },
+    { href: "#festival-2024", label: "Memorias: FMG 2024" },
   ];
 
   const competitionNavItems = [
@@ -54,7 +55,7 @@ const Navbar = () => {
   return (
     <motion.nav 
       className={`fixed top-0 left-0 right-0 w-full z-50 ${
-        isCompetitionPage ? 'bg-[rgb(95,188,215)]' : 'bg-[#FF7F50]'
+        isCompetitionPage ? 'bg-[rgb(95,188,215)]' : 'bg-[#C0C0C0]'
       }`}
     >
       <div className="max-w-[95vw] mx-auto px-4">
@@ -79,7 +80,9 @@ const Navbar = () => {
                   key={index}
                   href={item.href}
                   onClick={(e) => scrollToSection(e, item.href.slice(1))}
-                  className="text-white hover:bg-white hover:text-[#FF7F50] px-2 py-2 rounded-md text-sm font-[600] transition-all duration-300 ease-in-out whitespace-nowrap"
+                  className={`text-white hover:bg-white px-2 py-2 rounded-md text-sm font-[600] transition-all duration-300 ease-in-out whitespace-nowrap ${
+                    isCompetitionPage ? 'hover:text-[rgb(95,188,215)]' : 'hover:text-[#C0C0C0]'
+                  }`}
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                 >
@@ -93,7 +96,7 @@ const Navbar = () => {
               <Link
                 to="/festival"
                 onClick={() => window.scrollTo(0, 0)}
-                className="bg-white text-[#FF7F50] py-2 px-4 rounded-md hover:bg-opacity-90 transition-all duration-300 text-sm font-[700] shadow-md whitespace-nowrap"
+                className="bg-white text-[rgb(95,188,215)] py-2 px-4 rounded-md hover:bg-opacity-90 transition-all duration-300 text-sm font-[700] shadow-md whitespace-nowrap"
               >
                 Festival Mundial de la Guitarra
               </Link>
@@ -101,7 +104,7 @@ const Navbar = () => {
               <Link
                 to="/competition"
                 onClick={() => window.scrollTo(0, 0)}
-                className="bg-white text-[#FF7F50] py-2 px-4 rounded-md hover:bg-opacity-90 transition-all duration-300 text-sm font-[700] shadow-md whitespace-nowrap"
+                className="bg-[rgb(95,188,215)] text-white py-2 px-4 rounded-md hover:bg-opacity-90 transition-all duration-300 text-sm font-[700] shadow-md whitespace-nowrap"
               >
                 JAL World Guitar Competition
               </Link>
@@ -131,7 +134,7 @@ const Navbar = () => {
       {isOpen && (
         <motion.div 
           className={`md:hidden absolute left-0 right-0 ${
-            isCompetitionPage ? 'bg-[rgb(95,188,215)]' : 'bg-[#FF7F50]'
+            isCompetitionPage ? 'bg-[rgb(95,188,215)]' : 'bg-[#C0C0C0]'
           } px-4 pt-2 pb-4 shadow-lg`}
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -146,7 +149,7 @@ const Navbar = () => {
               className={`block px-3 py-2 rounded-md text-base font-[500] ${
                 isCompetitionPage 
                   ? 'text-white hover:bg-white hover:text-[rgb(95,188,215)]' 
-                  : 'text-white hover:bg-white hover:text-[#FF7F50]'
+                  : 'text-white hover:bg-white hover:text-[#C0C0C0]'
               } transition-all duration-200`}
               whileHover={{ x: 10 }}
             >
@@ -171,7 +174,7 @@ const Navbar = () => {
                 setIsOpen(false);
                 window.scrollTo(0, 0);
               }}
-              className="block mt-4 px-3 py-2 rounded-md text-base font-[700] bg-white text-[#FF7F50]"
+              className="block mt-4 px-3 py-2 rounded-md text-base font-[700] bg-[rgb(95,188,215)] text-white"
             >
               JAL World Guitar Competition
             </Link>

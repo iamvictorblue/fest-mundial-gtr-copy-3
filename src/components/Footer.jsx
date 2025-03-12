@@ -6,7 +6,7 @@ const Footer = () => {
   const isCompetitionPage = location.pathname.includes('competition');
 
   return (
-    <footer className={`py-6 ${isCompetitionPage ? 'bg-[rgb(95,188,215)]' : 'bg-[#FF7F50]'}`}>
+    <footer className={`py-6 ${isCompetitionPage ? 'bg-[rgb(95,188,215)]' : 'bg-[#C0C0C0]'}`}>
       <div className="container mx-auto px-4 flex justify-center">
         <img 
           src={festLogo} 

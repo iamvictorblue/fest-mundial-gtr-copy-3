@@ -5,13 +5,14 @@ import festLogo from "../assets/fest copy.png";
 import posterImage1 from "../assets/festmg3.jpeg";
 import posterImage2 from "../assets/festmg4.jpeg";
 import bannerImage from "../assets/conc23.jpg";
-import simposioImage1 from "../assets/festmg6.jpeg";
-import simposioImage2 from "../assets/festmg7.jpeg";
-import simposioImage3 from "../assets/festmg8.jpeg";
-import simposioImage4 from "../assets/festmg9.jpeg";
+import simposioImage1 from "../assets/lutieres11.jpg";
+import simposioImage2 from "../assets/lutieres2.jpg";
+import simposioImage3 from "../assets/lutieres33.jpg";
+import simposioImage4 from "../assets/lutieres4.jpg";
 import concursoImage1 from "../assets/conc1.jpg";
 import concursoImage2 from "../assets/conc2.jpg";
 import leonelaImage from "../assets/festmg13.jpeg";
+import adlerImage from "../assets/adler.jpeg";
 import ivanImage from "../assets/festmg12.jpeg";
 import trioGalantesImage from "../assets/festmg11.jpeg";
 import calendarioImage from "../assets/festmg1.jpeg";
@@ -84,7 +85,7 @@ const fadeInRight = {
 
 const FestivalPage = () => {
   return (
-    <div className="min-h-screen bg-[rgb(227,163,83)] text-black pt-16 relative overflow-hidden" data-navbar-title="Festival Mundial de la Guitarra">
+    <div className="min-h-screen bg-[#C0C0C0] text-black pt-16 relative overflow-hidden" data-navbar-title="Festival Mundial de la Guitarra">
       {/* Decorative banner images */}
       <div className="fixed top-26 left-0 h-[90vh] w-1/4 flex items-center justify-start pointer-events-none z-0">
         <img 
@@ -107,7 +108,7 @@ const FestivalPage = () => {
           <section id="festival-2025" 
             className="max-w-6xl mx-auto backdrop-blur-xl px-6 py-8 rounded-[2rem_0.5rem] shadow-2xl section-padding relative overflow-hidden transform hover:scale-[1.02] hover:shadow-3xl transition-all duration-500 ease-in-out scroll-mt-20"
             style={{
-              background: 'linear-gradient(to bottom, rgba(255, 127, 80, 0.9), rgba(255, 127, 80, 0.9))',
+              background: 'linear-gradient(to bottom, rgba(244, 238, 236, 0.9), rgba(251, 220, 209, 0.9))',
             }}
           >
             <div className="max-w-5xl mx-auto">
@@ -138,6 +139,55 @@ const FestivalPage = () => {
           </section>
         </AnimateOnScroll>
 
+        {/* Calendario De Eventos Section - Now moved before Simposio */}
+        <AnimateOnScroll animation={fadeInUp}>
+          <section id="calendario" 
+            className="mx-auto max-w-6xl backdrop-blur-xl px-6 py-8 rounded-[2rem_0.5rem] shadow-2xl section-padding relative overflow-hidden transform hover:scale-[1.02] hover:shadow-3xl transition-all duration-500 ease-in-out"
+            style={{
+              background: 'linear-gradient(to bottom, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9))',
+            }}
+          >
+            <div className="max-w-5xl mx-auto">
+              <h2 className="text-3xl md:text-4xl font-bold mb-8 text-[#666666] border-b-2 border-[#666666]/20 pb-2 text-center">
+                Descripción y Calendario De Eventos
+              </h2>
+              <div className="text-center mb-8">
+                <img 
+                  src={calendarioImage}
+                  alt="Calendario De Eventos"
+                  className="w-full max-w-4xl mx-auto rounded-lg shadow-lg"
+                />
+              </div>
+              <div className="text-lg text-gray-800 space-y-6">
+                <p>
+                  <span className="font-bold">El Festival Mundial de la Guitarra, Mayagüez 2025</span> es un evento único en Puerto Rico, con proyección internacional, dedicado a la guitarra clásica, su construcción e interpretación. Reúne anualmente a los más destacados luthiers y concertistas, posicionando a Mayagüez y Puerto Rico como un referente mundial en el arte y la cultura.
+                </p>
+                
+                <div>
+                  <h3 className="text-xl font-bold text-[#666666] mb-2">Áreas del Festival</h3>
+                  <p className="mb-2">Con una programación gratuita, el festival se estructura en cinco ejes principales:</p>
+                  <ul className="list-disc pl-6 space-y-1">
+                    <li>Simposio Internacional sobre la Construcción de la Guitarra (Ciclo de conferencias).</li>
+                    <li>Clases magistrales impartidas por expertos.</li>
+                    <li>Serie de conciertos y degustación de guitarras con artistas de renombre mundial.</li>
+                    <li>Concurso Nacional de la Guitarra de Puerto Rico (para niños y jóvenes de 10 a 18 años).</li>
+                    <li>José Antonio López World Guitar Competition, competencia profesional de alto nivel.</li>
+                  </ul>
+                </div>
+                
+                <div>
+                  <h3 className="text-xl font-bold text-[#666666] mb-2">Cartelera Artística 2025</h3>
+                  <p className="mb-2">El festival contará con la participación de figuras de renombre internacional, entre ellas:</p>
+                  <p className="mb-2"><span className="font-semibold">Luthiers invitados:</span> Andrea Tacchi (Italia), Gerhard Oldiges (Alemania), Alberto Martínez (Francia) y Gerardo Escobedo (México), quienes serán parte del Simposio Internacional sobre la Construcción de la Guitarra.</p>
+                  <p className="mb-2"><span className="font-semibold">Concertistas destacados:</span> El virtuoso puertorriqueño Iván Rijos, la ganadora del GFA 2024, Leonela Alejandro, y desde Ámsterdam, el Trío Galantes.</p>
+                </div>
+                
+                <p className="font-semibold text-center mt-4">Todos los eventos del Festival son libre de costos.</p>
+              </div>
+            </div>
+          </section>
+        </AnimateOnScroll>
+
         {/* Simposio Section - Slightly to the right */}
         <AnimateOnScroll animation={fadeInLeft}>
           <section id="simposio" 
@@ -148,12 +198,22 @@ const FestivalPage = () => {
           >
             <div className="max-w-5xl mx-auto">
               <div className="flex flex-col items-center gap-4 mb-6 w-full">
-                <h2 className="text-4xl md:text-5xl font-bold mb-8 text-[#FF7F50] border-b-2 border-[#FF7F50]/20 pb-2 text-center">
+                <h2 className="text-4xl md:text-5xl font-bold mb-8 text-[#666666] border-b-2 border-[#666666]/20 pb-2 text-center">
                   Simposio Internacional sobre la construcción de la Guitarra
                 </h2>
               </div>
               <div className="text-center">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+                <img 
+                    src={simposioImage3}
+                    alt="Simposio Internacional 3"
+                    className="w-full rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300"
+                  />
+                  <img 
+                    src={simposioImage4}
+                    alt="Simposio Internacional 4"
+                    className="w-full rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300"
+                  />
                   <img 
                     src={simposioImage1}
                     alt="Simposio Internacional 1"
@@ -164,143 +224,8 @@ const FestivalPage = () => {
                     alt="Simposio Internacional 2"
                     className="w-full rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300"
                   />
-                  <img 
-                    src={simposioImage3}
-                    alt="Simposio Internacional 3"
-                    className="w-full rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300"
-                  />
-                  <img 
-                    src={simposioImage4}
-                    alt="Simposio Internacional 4"
-                    className="w-full rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300"
-                  />
                 </div>
-                <div className="text-gray-700 mt-4 text-left space-y-4">
-                  <p className="text-lg md:text-2xl font-[400] whitespace-normal break-words [text-shadow:_1px_1px_1px_rgb(0_0_0_/_30%)] mix-blend-luminosity">
-                    El Festival Mundial de la Guitarra, Mayagüez 2025 promete ser un evento sin precedentes en 
-                    Puerto Rico, consolidando a la ciudad de Mayagüez en un punto clave para el arte y la cultura a nivel 
-                    internacional. Este festival único en su clase se distingue por ofrecer una experiencia integral que combina 
-                    música, pedagogía y el conocimiento artesanal detrás de la guitarra clásica.
-                  </p>
-                  <p className="text-lg md:text-2xl font-[200] whitespace-normal break-words [text-shadow:_1px_1px_1px_rgb(0_0_0_/_30%)] mix-blend-luminosity">
-                    El evento contará con una serie de conciertos protagonizados por virtuosos de renombre 
-                    mundial, un Simposio Internacional sobre la construcción de la guitarra clásica, y clases 
-                    magistrales dirigidas a los estudiantes de la Escuela Libre de Música de Mayagüez.
-                  </p>
-                  <p className="text-lg md:text-2xl font-[150] whitespace-normal break-words [text-shadow:_1px_1px_1px_rgb(0_0_0_/_30%)] mix-blend-luminosity">
-                    En la parte musical, los conciertos incluirán la participación de intérpretes de talla mundial como 
-                    Leonela Alejandro, ganadora del prestigioso GFA 2024, el brasileño Marcus Toscano, y el 
-                    reconocido virtuoso puertorriqueño Iván Rijos, cuya maestría es ampliamente aclamadas en los 
-                    escenarios internacionales.
-                  </p>
-                  <p className="text-lg md:text-2xl font-[100] whitespace-normal break-words [text-shadow:_1px_1px_1px_rgb(0_0_0_/_30%)] mix-blend-luminosity">
-                    El Festival Mundial de la Guitarra, Mayagüez 2025 se proyecta como un evento que trascenderá 
-                    fronteras, posicionando a Puerto Rico como un referente cultural y artístico en el mundo de la guitarra 
-                    clásica.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </section>
-        </AnimateOnScroll>
-
-        {/* Concurso Nacional Section - Slightly to the left */}
-        <AnimateOnScroll animation={fadeInRight}>
-          <section id="concurso-nacional" 
-            className="mx-auto max-w-6xl backdrop-blur-xl px-6 py-8 rounded-[2rem_0.5rem] shadow-2xl section-padding relative overflow-hidden transform"
-            style={{
-              background: 'linear-gradient(to bottom, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9))',
-            }}
-          >
-            <div className="max-w-5xl mx-auto">
-              <h2 className="text-3xl md:text-4xl font-bold mb-8 text-[#FF7F50] text-center border-b-2 border-[#FF7F50]/20 pb-2">
-                Concurso Nacional de Guitarra de Puerto Rico
-              </h2>
-              <p className="text-xl md:text-2xl mb-6 font-[500] whitespace-normal break-words [text-shadow:_1px_1px_1px_rgb(0_0_0_/_30%)] mix-blend-luminosity">
-                (Para jóvenes guitarristas de 10 a 18 años)
-              </p>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
-                <img 
-                  src={concursoImage1}
-                  alt="Concurso Nacional 1"
-                  className="w-full rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300"
-                />
-                <img 
-                  src={concursoImage2}
-                  alt="Concurso Nacional 2"
-                  className="w-full rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300"
-                />
-              </div>
-              <div className="space-y-6 text-gray-800">
-                <div>
-                  <div className="mb-6">
-                    <p className="text-xl font-semibold">Fecha: Sábado, 3 de mayo de 2025</p>
-                    <p className="text-xl font-semibold">Lugar: Teatro Balboa, Mayagüez</p>
-                  </div>
-                  
-                  <h4 className="text-2xl md:text-3xl font-semibold mb-4">
-                    Bases del Concurso
-                  </h4>
-                  <p className="text-lg mb-4">
-                    El concurso se divide en dos categorias:
-                  </p>
-
-                  <div className="mb-6">
-                    <h5 className="text-xl font-semibold mb-2">
-                      Categoría 12-15 años:
-                    </h5>
-                    <ul className="list-disc pl-6 mb-4">
-                      <li className="text-lg">Cada participante deberá interpretar una pieza con un máximo de 3 minutos.</li>
-                    </ul>
-                  </div>
-
-                  <div className="mb-6">
-                    <h5 className="text-xl font-semibold mb-2">
-                      Categoría 16-18 años:
-                    </h5>
-                    <ul className="list-disc pl-6 mb-4">
-                      <li className="text-lg">Primera Fase: cada participante deberá interpretar una pieza con un máximo de 5 minutos. El jurado seleccionará a tres finalistas.</li>
-                      <li className="text-lg">Concierto de Finalistas: Los seleccionados deberán interpretar un repertorio de 10 minutos de duración.</li>
-                    </ul>
-                  </div>
-                  
-                  <p className="text-lg italic mb-6">
-                    Nota: En ambas categorías, todas las piezas deben ser interpretadas de memoria.
-                  </p>
-
-                  <h4 className="text-2xl md:text-3xl font-semibold mb-4">
-                    Proceso de Inscripción
-                  </h4>
-                  <ul className="list-disc pl-6 mb-4">
-                    <li className="text-lg">Fechas de inscripción: Del 1 al 15 de abril de 2025</li>
-                  </ul>
-                  
-                  <p className="text-lg mb-2">Los participantes deberan:</p>
-                  <ol className="list-decimal pl-6 mb-6">
-                    <li className="text-lg">Completar el formulario disponible en nuestra página web: www.festivalmundialdelaguitarra.com</li>
-                    <li className="text-lg">Adjuntar una fotografía en alta resolución que se proyectara en el escenario durante su participación.</li>
-                  </ol>
-
-                  <h4 className="text-xl font-semibold mb-2">
-                    Importante:
-                  </h4>
-                  <ul className="list-disc pl-6 mb-6">
-                    <li className="text-lg">El horario especifico de cada participante será publicado en la página web antes del evento.</li>
-                    <li className="text-lg">El orden de participación se determinará por el nivel de dificultad del repertorio. En el Concierto de Finalistas, el orden será alfabético por apellido.</li>
-                    <li className="text-lg">No se aceptarán inscripciones después del 15 de abril de 2025, ya que se elaborará un programa impreso para el evento.</li>
-                    <li className="text-lg">Ganadores del Primer lugar en ediciones anteriores no podrán participar.</li>
-                  </ul>
-
-                  <p className="text-lg mb-2">
-                    Para consultas o dudas, contáctenos en: www.festivalmundialdelaguitarra.com
-                  </p>
-                  
-                  <div className="mt-8 text-right">
-                    <p className="text-lg font-semibold">Dr. Hermelindo Ruiz Mestre</p>
-                    <p className="text-lg">Presidente,</p>
-                    <p className="text-lg">Concurso Nacional de Guitarra de Puerto Rico</p>
-                  </div>
-                </div>
+                
               </div>
             </div>
           </section>
@@ -315,13 +240,13 @@ const FestivalPage = () => {
             }}
           >
             <div className="max-w-5xl mx-auto">
-              <h2 className="text-3xl md:text-4xl font-bold mb-8 text-[#FF7F50] border-b-2 border-[#FF7F50]/20 pb-2 text-center">
+              <h2 className="text-3xl md:text-4xl font-bold mb-8 text-[#666666] border-b-2 border-[#666666]/20 pb-2 text-center">
                 Conciertos
               </h2>
               
               {/* Degustación de Guitarras (formerly Café Conciertos) */}
               <div className="mb-12">
-                <h3 className="text-2xl font-bold text-[#FF7F50] mb-4 text-center">Degustación de Guitarras</h3>
+         
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                   <div className="text-center">
                     <img 
@@ -344,9 +269,22 @@ const FestivalPage = () => {
                 </div>
               </div>
 
-              {/* Concierto de Clausura (formerly Concierto de apertura) */}
               <div>
-                <h3 className="text-2xl font-bold text-[#FF7F50] mb-4 text-center">Concierto de Clausura</h3>
+                <h3 className="text-2xl font-bold text-[#666666] mb-4 text-center">Concierto de Ganadores Concurso Nacional 2024</h3>
+                <div className="text-center">
+                  <img 
+                    src={adlerImage}
+                    alt="Adler Mitja"
+                    className="w-full max-w-md mx-auto rounded-lg shadow-lg mb-4"
+                  />
+                  <div className="space-y-1">
+                    <p className="font-bold">Adler Mitja & Dylan Segarra (Puerto Rico)</p>
+                  </div>
+                </div>
+              </div>
+              <br></br>
+              <div>
+                <h3 className="text-2xl font-bold text-[#666666] mb-4 text-center">Concierto de Clausura</h3>
                 <div className="text-center">
                   <img 
                     src={leonelaImage}
@@ -363,25 +301,34 @@ const FestivalPage = () => {
           </section>
         </AnimateOnScroll>
 
-        {/* Calendario De Eventos Section */}
-        <AnimateOnScroll animation={fadeInUp}>
-          <section id="calendario" 
-            className="mx-auto max-w-6xl backdrop-blur-xl px-6 py-8 rounded-[2rem_0.5rem] shadow-2xl section-padding relative overflow-hidden transform hover:scale-[1.02] hover:shadow-3xl transition-all duration-500 ease-in-out"
+        {/* Concurso Nacional Section - Moved to after Conciertos */}
+        <AnimateOnScroll animation={fadeInRight}>
+          <section id="concurso-nacional" 
+            className="mx-auto max-w-6xl backdrop-blur-xl px-6 py-8 rounded-[2rem_0.5rem] shadow-2xl section-padding relative overflow-hidden transform"
             style={{
               background: 'linear-gradient(to bottom, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9))',
             }}
           >
             <div className="max-w-5xl mx-auto">
-              <h2 className="text-3xl md:text-4xl font-bold mb-8 text-[#FF7F50] border-b-2 border-[#FF7F50]/20 pb-2 text-center">
-                Calendario De Eventos
+              <h2 className="text-3xl md:text-4xl font-bold mb-8 text-[#666666] text-center border-b-2 border-[#666666]/20 pb-2">
+                Concurso Nacional de Guitarra de Puerto Rico
               </h2>
-              <div className="text-center">
+              <p className="text-xl md:text-2xl mb-6 font-[500] whitespace-normal break-words [text-shadow:_1px_1px_1px_rgb(0_0_0_/_30%)] mix-blend-luminosity">
+                (Para jóvenes guitarristas de 10 a 18 años)
+              </p>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
                 <img 
-                  src={calendarioImage}
-                  alt="Calendario De Eventos"
-                  className="w-full max-w-4xl mx-auto rounded-lg shadow-lg"
+                  src={concursoImage1}
+                  alt="Concurso Nacional 1"
+                  className="w-full rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300"
+                />
+                <img 
+                  src={concursoImage2}
+                  alt="Concurso Nacional 2"
+                  className="w-full rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300"
                 />
               </div>
+              
             </div>
           </section>
         </AnimateOnScroll>
@@ -395,8 +342,8 @@ const FestivalPage = () => {
             }}
           >
             <div className="max-w-5xl mx-auto">
-              <h2 className="text-2xl md:text-3xl font-bold mb-8 text-[#FF7F50] border-b-2 border-[#FF7F50]/20 pb-2 text-center">
-                Festival Mundial de la Guitarra 2024
+              <h2 className="text-2xl md:text-3xl font-bold mb-8 text-[#666666] border-b-2 border-[#666666]/20 pb-2 text-center">
+                Memorias del Festival Mundial de la Guitarra 2024
               </h2>
               <div className="text-center space-y-8">
                 <img 
