@@ -11,10 +11,10 @@ import simposioImage3 from "../assets/lutieres33.jpg";
 import simposioImage4 from "../assets/lutieres4.jpg";
 import concursoImage1 from "../assets/conc1.jpg";
 import concursoImage2 from "../assets/conc2.jpg";
-import leonelaImage from "../assets/festmg13.jpeg";
+import leonelaImage from "../assets/conc_leo.jpg";
 import adlerImage from "../assets/adler.jpeg";
-import ivanImage from "../assets/festmg12.jpeg";
-import trioGalantesImage from "../assets/festmg11.jpeg";
+import ivanImage from "../assets/conc_ivan.jpg";
+import trioGalantesImage from "../assets/conc_trio.jpg";
 import calendarioImage from "../assets/festmg1.jpeg";
 import bannerA from "../assets/Concurso Nacional de Guitarra 2025 (ROLL UP BANNER A).jpg";
 import bannerB from "../assets/Concurso Nacional de Guitarra 2025 (ROLL UP BANNER B).jpg";
@@ -160,27 +160,27 @@ const FestivalPage = () => {
               </div>
               <div className="text-lg text-gray-800 space-y-6">
                 <p>
-                  <span className="font-bold">El Festival Mundial de la Guitarra, Mayagüez 2025</span> es un evento único en Puerto Rico, con proyección internacional, dedicado a la guitarra clásica, su construcción e interpretación. Reúne anualmente a los más destacados luthiers y concertistas, posicionando a Mayagüez y Puerto Rico como un referente mundial en el arte y la cultura.
+                  <span className="font-bold">El Festival Mundial de la Guitarra 2025</span> es un evento sin precedentes en Puerto Rico, dedicado a la Guitarra Clásica, su construcción y su interpretación. Con una visión de calibre internacional, el festival busca posicionar a Mayagüez y a Puerto Rico como un referente global en el ámbito artístico y cultural.
+                </p>
+                
+                <p>
+                  Este evento reunirá a destacados artistas, luthiers y concertistas de la escena mundial, ofreciendo una experiencia cultural que combina música, pedagogía y el conocimiento artesanal de la construcción de la Guitarra Clásica.
                 </p>
                 
                 <div>
-                  <h3 className="text-xl font-bold text-[#666666] mb-2">Áreas del Festival</h3>
-                  <p className="mb-2">Con una programación gratuita, el festival se estructura en cinco ejes principales:</p>
+                  <p className="mb-2">La programación del festival contará con una agenda de acceso completamente gratuito, organizada en cinco áreas principales:</p>
                   <ul className="list-disc pl-6 space-y-1">
-                    <li>Simposio Internacional sobre la Construcción de la Guitarra (Ciclo de conferencias).</li>
-                    <li>Clases magistrales impartidas por expertos.</li>
-                    <li>Serie de conciertos y degustación de guitarras con artistas de renombre mundial.</li>
-                    <li>Concurso Nacional de la Guitarra de Puerto Rico (para niños y jóvenes de 10 a 18 años).</li>
-                    <li>José Antonio López World Guitar Competition, competencia profesional de alto nivel.</li>
+                    <li><span className="font-bold">Simposio Internacional sobre la Construcción de la Guitarra</span> (Ciclo de conferencias).</li>
+                    <li><span className="font-bold">Clases magistrales</span> dirigidas a estudiantes de las escuelas Libres de Música.</li>
+                    <li><span className="font-bold">Serie de conciertos y degustación de guitarras</span>, con la participación de renombrados concertistas.</li>
+                    <li><span className="font-bold">Concurso Nacional de la Guitarra de Puerto Rico</span>, dirigido a niños y jóvenes de 10 a 18 años.</li>
+                    <li><span className="font-bold">José Antonio López World Guitar Competition</span>, competencia de categoría profesional.</li>
                   </ul>
                 </div>
                 
-                <div>
-                  <h3 className="text-xl font-bold text-[#666666] mb-2">Cartelera Artística 2025</h3>
-                  <p className="mb-2">El festival contará con la participación de figuras de renombre internacional, entre ellas:</p>
-                  <p className="mb-2"><span className="font-semibold">Luthiers invitados:</span> Andrea Tacchi (Italia), Gerhard Oldiges (Alemania), Alberto Martínez (Francia) y Gerardo Escobedo (México), quienes serán parte del Simposio Internacional sobre la Construcción de la Guitarra.</p>
-                  <p className="mb-2"><span className="font-semibold">Concertistas destacados:</span> El virtuoso puertorriqueño Iván Rijos, la ganadora del GFA 2024, Leonela Alejandro, y desde Ámsterdam, el Trío Galantes.</p>
-                </div>
+                <p>
+                  Los eventos del festival se llevarán a cabo en la Universidad de Puerto Rico - Recinto de Mayagüez, el Teatro Yagüez y el Nuevo Teatro Balboa.
+                </p>
                 
                 <p className="font-semibold text-center mt-4">Todos los eventos del Festival son libre de costos.</p>
               </div>
@@ -358,6 +358,19 @@ const FestivalPage = () => {
                 </div>
                 {/* YouTube Embeds */}
                 <div className="space-y-8">
+                  {/* New FMG 2024 Video */}
+                  <div className="relative pt-[56.25%] w-full">
+                    <iframe
+                      className="absolute top-0 left-0 w-full h-full rounded-lg shadow-lg"
+                      src="https://www.youtube.com/embed/qILEN30-pJo"
+                      title="Festival Mundial de la Guitarra 2024"
+                      frameBorder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      referrerPolicy="strict-origin-when-cross-origin"
+                      allowFullScreen
+                    />
+                  </div>
+                  
                   {/* Concierto de Finalistas Video */}
                   <div className="relative pt-[56.32%] w-full">
                     <iframe
