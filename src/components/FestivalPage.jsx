@@ -149,40 +149,42 @@ const FestivalPage = () => {
           >
             <div className="max-w-5xl mx-auto">
               <h2 className="text-3xl md:text-4xl font-bold mb-8 text-[#666666] border-b-2 border-[#666666]/20 pb-2 text-center">
-                Descripción y Calendario De Eventos
+                Descripción y Calendario 
               </h2>
-              <div className="text-center mb-8">
+              
+              <div className="text-lg text-gray-800 space-y-6 mb-8">
+                <p>
+                  <span className="font-bold">El Festival Mundial de la Guitarra</span> es un evento cultural dedicado al arte de la Guitarra Clásica, su construcción y su interpretación. Nuestra cartelera se distingue por reunir a los más destacados luthiers y concertistas del mundo, ofreciendo una experiencia integral que fusiona el profundo conocimiento artesanal detrás de la construcción de la guitarra clásica, con una serie de conciertos y pedagogía. El Concurso Nacional e Internacional de Guitarra representa un estímulo para los jóvenes guitarristas de Puerto Rico y el ámbito internacional, brindándoles una plataforma para demostrar su talento y alcanzar nuevos horizontes en su desarrollo artístico. Cada edición del festival se presenta con una producción de primer nivel que consolida a la ciudad de Mayagüez como un verdadero epicentro de arte y cultura a nivel mundial.
+                </p>
+                
+                <div>
+                  <h3 className="text-xl font-bold text-[#666666] mb-2">Áreas del Festival</h3>
+                  <p className="mb-2">Con una programación gratuita, el festival se estructura en cinco ejes principales:</p>
+                  <ul className="list-disc pl-6 space-y-1">
+                    <li><span className="font-bold">Simposio Internacional sobre la Construcción de la Guitarra</span> (Ciclo de conferencias).</li>
+                    <li><span className="font-bold">Clases magistrales</span></li>
+                    <li><span className="font-bold">Serie de conciertos y degustación de guitarras</span> con artistas de renombre mundial.</li>
+                    <li><span className="font-bold">Concurso Nacional de la Guitarra de Puerto Rico</span> (para niños y jóvenes de 10 a 18 años).</li>
+                    <li><span className="font-bold">José Antonio López World Guitar Competition</span>, competencia profesional.</li>
+                  </ul>
+                </div>
+                
+                <div>
+                  <h3 className="text-xl font-bold text-[#666666] mb-2">Cartelera Artística 2025</h3>
+                  <p className="mb-2">El festival contará con la participación de figuras de renombre mundial, entre ellas:</p>
+                  <p className="mb-2"><span className="font-semibold">Luthiers invitados:</span> Andrea Tacchi (Italia), Gerhard Oldiges (Alemania), Alberto Martínez (Francia) y Gerardo Escobedo (México), quienes serán parte del Simposio Internacional sobre la Construcción de la Guitarra.</p>
+                  <p className="mb-2"><span className="font-semibold">Concertistas destacados:</span> El virtuoso puertorriqueño Iván Rijos, la ganadora del GFA 2024, Leonela Alejandro, y desde Ámsterdam, el Trío Galantes.</p>
+                </div>
+                
+                <p className="font-semibold text-center mt-4">Todos los eventos del Festival son libre de costos.</p>
+              </div>
+              
+              <div className="text-center">
                 <img 
                   src={calendarioImage}
                   alt="Calendario De Eventos"
                   className="w-full max-w-4xl mx-auto rounded-lg shadow-lg"
                 />
-              </div>
-              <div className="text-lg text-gray-800 space-y-6">
-                <p>
-                  <span className="font-bold">El Festival Mundial de la Guitarra 2025</span> es un evento sin precedentes en Puerto Rico, dedicado a la Guitarra Clásica, su construcción y su interpretación. Con una visión de calibre internacional, el festival busca posicionar a Mayagüez y a Puerto Rico como un referente global en el ámbito artístico y cultural.
-                </p>
-                
-                <p>
-                  Este evento reunirá a destacados artistas, luthiers y concertistas de la escena mundial, ofreciendo una experiencia cultural que combina música, pedagogía y el conocimiento artesanal de la construcción de la Guitarra Clásica.
-                </p>
-                
-                <div>
-                  <p className="mb-2">La programación del festival contará con una agenda de acceso completamente gratuito, organizada en cinco áreas principales:</p>
-                  <ul className="list-disc pl-6 space-y-1">
-                    <li><span className="font-bold">Simposio Internacional sobre la Construcción de la Guitarra</span> (Ciclo de conferencias).</li>
-                    <li><span className="font-bold">Clases magistrales</span> dirigidas a estudiantes de las escuelas Libres de Música.</li>
-                    <li><span className="font-bold">Serie de conciertos y degustación de guitarras</span>, con la participación de renombrados concertistas.</li>
-                    <li><span className="font-bold">Concurso Nacional de la Guitarra de Puerto Rico</span>, dirigido a niños y jóvenes de 10 a 18 años.</li>
-                    <li><span className="font-bold">José Antonio López World Guitar Competition</span>, competencia de categoría profesional.</li>
-                  </ul>
-                </div>
-                
-                <p>
-                  Los eventos del festival se llevarán a cabo en la Universidad de Puerto Rico - Recinto de Mayagüez, el Teatro Yagüez y el Nuevo Teatro Balboa.
-                </p>
-                
-                <p className="font-semibold text-center mt-4">Todos los eventos del Festival son libre de costos.</p>
               </div>
             </div>
           </section>
@@ -270,7 +272,7 @@ const FestivalPage = () => {
               </div>
 
               <div>
-                <h3 className="text-2xl font-bold text-[#666666] mb-4 text-center">Concierto de Ganadores Concurso Nacional 2024</h3>
+                <h3 className="text-2xl font-bold text-[#666666] mb-4 text-center">Concierto de Ganadores, Concurso Nacional de Guitarra 2024</h3>
                 <div className="text-center">
                   <img 
                     src={adlerImage}
@@ -313,9 +315,19 @@ const FestivalPage = () => {
               <h2 className="text-3xl md:text-4xl font-bold mb-8 text-[#666666] text-center border-b-2 border-[#666666]/20 pb-2">
                 Concurso Nacional de Guitarra de Puerto Rico
               </h2>
-              <p className="text-xl md:text-2xl mb-6 font-[500] whitespace-normal break-words [text-shadow:_1px_1px_1px_rgb(0_0_0_/_30%)] mix-blend-luminosity">
-                (Para jóvenes guitarristas de 10 a 18 años)
+              <p className="text-xl md:text-1xl mb-2 font-[200] whitespace-normal break-words [text-shadow:_1px_1px_1px_rgb(0_0_0_/_30%)] mix-blend-luminosity text-center">
+                (Para jóvenes guitarristas de 10 a 18 años). Para inscribirse, oprima aquí:
               </p>
+              <div className="flex justify-center mb-6">
+                <a 
+                  href="https://forms.gle/pCvebo7i2hkoKzXM9" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="inline-block bg-[#FF8C00] text-white py-3 px-6 rounded-full hover:bg-[#E67E00] transition-colors text-center font-[700] text-lg shadow-md hover:shadow-lg"
+                >
+                  Formulario de Inscripción
+                </a>
+              </div>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
                 <img 
                   src={concursoImage1}

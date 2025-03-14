@@ -189,23 +189,37 @@ const WorldGuitarCompetitionPage = () => {
               </p>
               <p className="text-lg md:text-2xl mb-4 font-[500] whitespace-normal break-words
                 [text-shadow:_1px_1px_1px_rgb(0_0_0_/_30%)] mix-blend-luminosity">
+                The competition will take place as part of the <span className="font-bold"> Festival Mundial de la Guitarra</span>, 
+                a global event celebrating the art of guitar, featuring some of the world's most renowned luthiers. 
+                For the 2025 edition, participants will include Andrea Tacchi (Italy), Gerhard Oldiges (Germany), Gerardo Escobedo (Mexico), 
+                and Alberto Martínez from <span className="italic">Orfeo Magazine</span> (Uruguay/Paris).
+              </p>
+              <p className="text-lg md:text-2xl mb-4 font-[500] whitespace-normal break-words
+                [text-shadow:_1px_1px_1px_rgb(0_0_0_/_30%)] mix-blend-luminosity">
+                The festival's featured concerts will include a performance by GFA winner Leonela Alejandro (Puerto Rico) and the Trío Galantes (Netherlands). Additionally, 
+                a <span className="italic">Café Concert</span> titled "<span className="italic">Guitar Tasting</span>" will be presented, featuring virtuoso guitarists Iván Rijos (Puerto Rico). To further enrich this grand international gathering, a series of masterclasses conducted by guest artists 
+                will also be offered.
+              </p>
+              <h2 className="text-2xl md:text-3xl font-[600] text-white text-center
+                  font-['Inter'] tracking-[0.2em] leading-relaxed
+                  [text-shadow:_2px_2px_4px_rgb(0_0_0_/_30%)]
+                  border-b-2 border-white/30 pb-2 uppercase w-full">Mission</h2>
+              <p className="text-lg md:text-2xl mb-4 font-[500] whitespace-normal break-words
+                [text-shadow:_1px_1px_1px_rgb(0_0_0_/_30%)] mix-blend-luminosity">
                 With $16,000 in prizes, the competition aims to inspire guitarists worldwide to revive the lyricism and tonal richness
                 that define classical guitar. It also seeks to rekindle the interpretative styles popularized by legendary figures such 
                 as Julian Bream (England), Alirio Díaz (Venezuela), and Leonardo Egúrbida (Puerto Rico).
               </p>
+              <h2 className="text-2xl md:text-3xl font-[600] text-white text-center
+                  font-['Inter'] tracking-[0.2em] leading-relaxed
+                  [text-shadow:_2px_2px_4px_rgb(0_0_0_/_30%)]
+                  border-b-2 border-white/30 pb-2 uppercase w-full">Contact</h2>
               <p className="text-lg md:text-2xl mb-4 font-[500] whitespace-normal break-words
                 [text-shadow:_1px_1px_1px_rgb(0_0_0_/_30%)] mix-blend-luminosity">
-                The competition will take place as part of the <span className="font-bold"> Festival Mundial de la Guitarra</span>, 
-                a global event celebrating the art of guitar, featuring some of the world's most renowned luthiers. 
-                For the 2025 edition, participants will include Andrea Tacchi (Italy), Gerhard Oldiges (Germany), Gerardo Escobedo (Mexico), 
-                Alberto Martínez from <span className="italic">Orfeo Magazine</span> (Uruguay/Paris), and the distinguished collector José Luis Postigo (Seville, Spain).
-              </p>
-              <p className="text-lg md:text-2xl mb-4 font-[500] whitespace-normal break-words
-                [text-shadow:_1px_1px_1px_rgb(0_0_0_/_30%)] mix-blend-luminosity">
-                The festival's featured concerts will include a performance by GFA winner Leonela Alejandro (Puerto Rico). Additionally, 
-                two <span className="italic">Café Concerts</span> titled "<span className="italic">Guitar Tasting</span>" will be presented, featuring virtuoso guitarists Iván Rijos (Puerto Rico) and 
-                Marcus Toscano (Brazil). To further enrich this grand international gathering, a series of masterclasses conducted by guest artists 
-                will also be offered.
+                For more information, please contact us at:
+                <a href="mailto:jalworldguitarcompetition@gmail.com" className="text-white hover:text-[#498FC6] underline transition-colors duration-200">
+                  jalworldguitarcompetition@gmail.com
+                </a>
               </p>
             </div>
           </section>
@@ -229,7 +243,7 @@ const WorldGuitarCompetitionPage = () => {
             </div>
             <p className="text-lg md:text-2xl mb-4 font-[500] whitespace-normal break-words
               [text-shadow:_1px_1px_1px_rgb(0_0_0_/_30%)] mix-blend-luminosity">
-              The <span className="font-bold italic">José Antonio López World Guitar Competition</span> will be held in Mayagüez, Puerto Rico.
+              The <span className="font-bold italic">José Antonio López World Guitar Competition</span> will be held at the historical Teatro Yagüez, Mayagüez, Puerto Rico.
             </p>
             <p className="text-lg md:text-2xl mb-4 font-[500] whitespace-normal break-words
               [text-shadow:_1px_1px_2px_rgb(0_0_0_/_30%)]">
@@ -323,8 +337,8 @@ const WorldGuitarCompetitionPage = () => {
             <p className="text-lg md:text-2xl mb-4 font-[500] whitespace-normal break-words
               [text-shadow:_1px_1px_1px_rgb(0_0_0_/_30%)] mix-blend-luminosity">
               The competition requires each contestant to perform the piece "<span className="italic">Guitarra Poética</span>" (Homage to Manuel Bellido) 
-              composed by Puerto Rican composer José Antonio López. The PDF score, audio samples, and several YouTube videos 
-              will be available for download on the event's official website.
+              composed by Puerto Rican composer José Antonio López. The PDF score, audio samples, and YouTube videos 
+              will be available here:
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
@@ -359,6 +373,21 @@ const WorldGuitarCompetitionPage = () => {
                 className="inline-block bg-[#498FC6] text-white py-3 px-6 rounded-full hover:bg-[#3A7CAE] transition-colors text-center font-[700] text-lg shadow-md hover:shadow-lg"
               >
                 Download Score (PDF)
+              </a>
+            </div>
+            <p className="text-lg md:text-2xl mb-4 font-[500] whitespace-normal break-words
+              [text-shadow:_1px_1px_1px_rgb(0_0_0_/_30%)] mix-blend-luminosity">
+              In the video, each contestant must include a brief personal introduction before the performance, stating their: 1. Full name, 2. Country of Origin, 3. The Name of the Competition, and 4. The Title of The Piece.
+              Additionally, participants must submit the registration form, which can be downloaded here:
+            </p>
+            <div className="flex justify-center mt-6 mb-4">
+              <a 
+                href="https://forms.gle/R64Q8K6wFTcTEpuH9" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="inline-block bg-white text-[rgb(95,188,215)] py-3 px-6 rounded-full hover:bg-gray-100 transition-colors text-center font-[700] text-lg shadow-md hover:shadow-lg"
+              >
+                Registration Form
               </a>
             </div>
           </section>
@@ -406,23 +435,25 @@ const WorldGuitarCompetitionPage = () => {
             <p className="text-lg md:text-2xl mb-4 font-[500] whitespace-normal break-words
               [text-shadow:_1px_1px_1px_rgb(0_0_0_/_30%)] mix-blend-luminosity">
               The <span className="font-bold italic">José Antonio López World Guitar Competition </span>begins with an initial elimination phase, 
-              which requires contestants to perform the mandatory piece titled "<span className="italic">Guitarra Poética</span>" This performance must be submitted as a 
-              YouTube video no later than March 30, 2025.
+              which requires contestants to perform the mandatory piece titled "<span className="italic">Guitarra Poética</span>". This performance must be submitted as a 
+              YouTube video link from March 15, 2025 and no later than March 30, 2025. Finalists will be announced on April 1, 2025 on this website.
               <br>
               </br>
               <br>
               </br>
-              In the video, each contestant must include a brief personal introduction before the performance, stating their full name, 
-              country of origin, the name of the competition, and the title of the piece.
-              Additionally, participants must submit the registration form, which can be downloaded from the official website, 
-              along with the video link. Both the video link and the registration form should be sent to the following email address:{' '}
-              <a 
-                href="mailto:jalworldguitarcompetition@gmail.com" 
-                className="text-white hover:text-[#498FC6] underline transition-colors duration-200"
-              >
-                jalworldguitarcompetition@gmail.com
-              </a>
+              In the video, each contestant must include a brief personal introduction before the performance, stating their: 1. Full name, 2. Country of Origin, 3. The Name of the Competition, and 4. The Title of The Piece.
+              Additionally, participants must submit the registration form, which can be downloaded here:
             </p>
+            <div className="flex justify-center mt-6 mb-4">
+              <a 
+                href="https://forms.gle/R64Q8K6wFTcTEpuH9" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="inline-block bg-white text-[rgb(95,188,215)] py-3 px-6 rounded-full hover:bg-gray-100 transition-colors text-center font-[700] text-lg shadow-md hover:shadow-lg"
+              >
+                Registration Form
+              </a>
+            </div>
           </section>
         </AnimateOnScroll>
 
@@ -444,14 +475,14 @@ const WorldGuitarCompetitionPage = () => {
             </div>
             <p className="text-lg md:text-2xl mb-4 font-[500] whitespace-normal break-words
               [text-shadow:_1px_1px_1px_rgb(0_0_0_/_30%)] mix-blend-luminosity">
-              The final stage of the <span className="font-bold italic">José Antonio López World Guitar Competition</span> will take place in person on <span className="font-bold">May 3, 2025</span>, in <span className="font-bold">Puerto Rico</span>.
+              The final stage of the <span className="font-bold italic">José Antonio López World Guitar Competition</span> will take place in person on <span className="font-bold">May 1, 2025</span>, at the historical Teatro Yagüez in <span className="font-bold">Mayagüez, Puerto Rico</span>.
               <br>
               </br>
               <br>
               </br>
               During the first round of the final stage, the three finalists, selected in alphabetical order, will perform the required piece,
                "<span className="italic">Guitarra Poética</span>" by José Antonio López. In the second round, the finalists will present a free-choice repertoire with a maximum duration 
-               of 20 minutes. The repertoire selection and interpretative approach must align with the competition's guidelines.
+               of 20 minutes. (The repertoire selection and interpretative approach must align with the competition's mission).
             </p>
           </section>
         </AnimateOnScroll>
@@ -581,11 +612,11 @@ const WorldGuitarCompetitionPage = () => {
             <div className="grid md:grid-cols-[2fr,1fr] gap-8 items-center">
               <div className="order-2 md:order-1">
                 <div className="flex flex-col items-center gap-0 mb-6 w-full">
-                  <img src={festLogo} alt="Festival Logo" className="w-48 h-48 object-contain -mt-24 -mb-8" />
+                  <img src={festLogo} alt="Festival Logo" className="w-40 h-40 object-contain -mt-24 -mb-8" />
                   <h2 className="text-2xl md:text-3xl font-[600] text-white text-center
                     font-['Inter'] tracking-[0.2em] leading-relaxed
                     [text-shadow:_2px_2px_4px_rgb(0_0_0_/_30%)]
-                    border-b-2 border-white/30 pb-2 uppercase w-full">José Antonio López</h2>
+                    border-b-2 border-white/30 pb-2 uppercase w-full">About José Antonio López</h2>
                 </div>
                 <p className="text-lg md:text-2xl mb-4 font-[500] whitespace-normal break-words
                   [text-shadow:_1px_1px_1px_rgb(0_0_0_/_30%)] mix-blend-luminosity">
