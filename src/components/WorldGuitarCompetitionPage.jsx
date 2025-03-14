@@ -15,6 +15,7 @@ import jalwgcImage3 from "../assets/jalwgc3.jpg";
 import jalwgcImage4 from "../assets/jalwgc4.jpg";
 import beachImage from "../assets/beach-image.png";
 import aerialBeachImage from "../assets/aerial-beach-image.png";
+import guitarImage from "../assets/guit.png";
 
 // AnimateOnScroll component
 const AnimateOnScroll = ({ children, animation }) => {
@@ -312,6 +313,18 @@ const WorldGuitarCompetitionPage = () => {
               The award consists of a "Replica of Antonio de Torres" concert guitar, valued at $5,000, crafted by the world-renowned luthier 
               Gerardo Escobedo from Paracho, Mexico.
               </p>
+              
+              {/* Guitar Image and Description */}
+              <div className="mt-6 flex flex-col items-center">
+                <img 
+                  src={guitarImage} 
+                  alt="Réplica Antonio de Torres Guitar" 
+                  className="w-3/4 md:w-1/2 max-w-[300px] rounded-lg shadow-lg mb-4"
+                />
+                <p className="text-center text-white text-lg italic font-[500] [text-shadow:_1px_1px_1px_rgb(0_0_0_/_20%)]">
+                  Réplica Antonio de Torres, Modelo "La Invencible" by Master Luthier Gerardo Escobedo.
+                </p>
+              </div>
             </div>
           </section>
         </AnimateOnScroll>
