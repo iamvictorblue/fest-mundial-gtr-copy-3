@@ -387,12 +387,7 @@ const WorldGuitarCompetitionPage = () => {
               >
                 Download Score (PDF)
               </a>
-            </div>
-            <p className="text-lg md:text-2xl mb-4 font-[500] whitespace-normal break-words
-              [text-shadow:_1px_1px_1px_rgb(0_0_0_/_30%)] mix-blend-luminosity">
-              In the video, each contestant must include a brief personal introduction before the performance, stating their: 1. Full name, 2. Country of Origin, 3. The Name of the Competition, and 4. The Title of The Piece.
-              Additionally, participants must submit the registration form, which can be downloaded here:
-            </p>
+            </div> 
             <div className="flex justify-center mt-6 mb-4">
               <a 
                 href="https://forms.gle/R64Q8K6wFTcTEpuH9" 
