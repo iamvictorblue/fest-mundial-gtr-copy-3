@@ -29,7 +29,7 @@ const Navbar = () => {
   };
 
   const festivalNavItems = [
-    { href: "#festival-2025", label: "Festival Mundial De La Guitarra 2025" },
+    { href: "#festival-2025", label: "Festival Mundial de la Guitarra 2025" },
     { href: "#calendario", label: "Descripción y Calendario" },
     { href: "#simposio", label: "Simposio Internacional" },
     { href: "#conciertos", label: "Conciertos" },
