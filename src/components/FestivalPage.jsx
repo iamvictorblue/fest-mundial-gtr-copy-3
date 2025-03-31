@@ -320,7 +320,7 @@ const FestivalPage = () => {
               </p>
               <div className="flex justify-center mb-6">
                 <a 
-                  href="https://forms.gle/pCvebo7i2hkoKzXM9" 
+                  href="https://docs.google.com/forms/d/e/1FAIpQLScgUjrhno28Sbpq8Tl1FcJuWlkZFeu3RrPvBPWTxJshpz1e0g/viewform?usp=sharing" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="inline-block bg-[#FF8C00] text-white py-3 px-6 rounded-full hover:bg-[#E67E00] transition-colors text-center font-[700] text-lg shadow-md hover:shadow-lg"
